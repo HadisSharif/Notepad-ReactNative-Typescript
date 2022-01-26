@@ -1,13 +1,15 @@
+import { API_KEY, DATABSE_URL, CLIENT_ID, APP_ID, STORAGE_BUCKET, MESSAGING_SENDER_ID } from '@env';
 import firestore, { firebase } from '@react-native-firebase/firestore';
+
 
 export const firebaseConfig = {
   clientId: CLIENT_ID,
   apiKey: API_KEY,
-  databaseURL: 'DBURL,
-  projectId: PROKECT_ID,
+  databaseURL: DATABSE_URL,
+  storageBucket: STORAGE_BUCKET,
+  messagingSenderId: MESSAGING_SENDER_ID,
+  projectId: 'colorifynote1',
   appId: APP_ID,
-  storageBucket: 'TORAGEBUCKET,
-  messagingSenderId: MESSAGESENDERID
 };
 
 if (!firebase.apps.length)
