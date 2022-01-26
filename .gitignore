@@ -20,7 +20,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
+*.plist
 # Android/IntelliJ
 #
 build/
@@ -28,6 +28,7 @@ build/
 .gradle
 local.properties
 *.iml
+google-services.json
 
 # node.js
 #
@@ -36,6 +37,7 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 yarn.lock
+.env
 
 # BUCK
 buck-out/
