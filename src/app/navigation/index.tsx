@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleNotePage from '../../features/note/SingleNote';
 import ProfilePage from '../../features/googleSignIn/Profile';
-import WelcomePage from '../../features/googleSignIn/SignIn';
+import SignInPage from '../../features/googleSignIn/SignIn';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useSelector} from 'react-redux';
 import {RootState} from '../store';
@@ -10,7 +10,7 @@ import {HeaderBackBtn, ScreenOptions} from '../../common/NavigationUI';
 import {Strings} from '../../common/utils/Strings';
 
 type RootStackParamList = {
-  WelcomePage: undefined;
+  SignInPage: undefined;
   MainBottomTabs: undefined;
   SingleNotePage: undefined;
   ProfilePage: undefined;
@@ -32,8 +32,8 @@ export const Index = () => {
       {isUserEmpty ? (
         <RootStack.Screen
           options={{headerShown: false}}
-          name="WelcomePage"
-          component={WelcomePage}
+          name="SignInPage"
+          component={SignInPage}
         />
       ) : (
         <>
