@@ -4,7 +4,7 @@ import ProfilePage from '../../features/googleSignIn/Profile';
 import WelcomePage from '../../features/googleSignIn/SignIn';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useSelector} from 'react-redux';
-import {RootState} from '../../app/store';
+import {RootState} from '../store';
 import {MainBtmTabs} from './MainBottomTabs';
 import {HeaderBackBtn, ScreenOptions} from '../../common/NavigationUI';
 import {Strings} from '../../common/utils/Strings';
@@ -17,7 +17,7 @@ type RootStackParamList = {
 };
 const RootStack = createStackNavigator<RootStackParamList>();
 
-export const MainNavigation = () => {
+export const Index = () => {
   const currentTheme = useSelector((state: RootState) => state.theme.themeType);
 
   const userGoogleData = useSelector(
