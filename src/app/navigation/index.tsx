@@ -2,7 +2,7 @@ import React from "react";
 import SingleNotePage from "../../features/note/SingleNote";
 import ProfilePage from "../../features/googleSignIn/Profile";
 import SignInPage from "../../features/googleSignIn/SignIn";
-import SplashPage from "../../features/Splash";
+import SplashPage from "../../common/Splash";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
