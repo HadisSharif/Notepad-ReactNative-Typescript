@@ -1,5 +1,8 @@
 export const Colors = {
     main_purple: '#C49BDF',
+    light_purple:'#B980F0',
+    pink:'#FE9898',
+    yellow:'#FFFCDC',
     green_light: '#c5edd6',
     cream: '#ddbea9',
     dark_green: '#6b705c',
